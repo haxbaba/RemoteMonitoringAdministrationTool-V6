@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="R-Listener-GUI-V.4.3.exe" version="1.0.0.3" publicKeyToken="9b39f768298739ef" language="en-IN" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="123.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="R-Listener-GUI-V.4.3" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="R-Listener-GUI-V.4.3.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.RDPCOMAPILib.dll" size="23552">
+      <assemblyIdentity name="AxInterop.RDPCOMAPILib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>m/FBlgE5YM5gpoCUsBJUUBaGNWY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.RDPCOMAPILib.dll" size="54784">
+      <assemblyIdentity name="Interop.RDPCOMAPILib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rsoLtGFokZH5jeTljKViq4XjTAc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="R-Listener-GUI-V.4.3.exe" size="571392">
+      <assemblyIdentity name="R-Listener-GUI-V.4.3" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>46MVAqF8cMtp5gLupOvT3TCUUVI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="123.ico" size="148076">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Dn8fpQMtXF+2ozn7SOcvGBH6xDs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=UDAY-PC\Uday" issuerKeyHash="de1670b4aa99e9a60c6fa15077f52e0d27001183" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>oIzHXofVm358nu2KpQUhGo/J+MQ=</DigestValue></Reference></SignedInfo><SignatureValue>d/O9kZ7/BRxo/ECAwIw9ZxaJk4YeW1tuSK7bCNvk78ZVsGAZbmahbsCyjX0laGqwduS3F0SoiPJc2fBOXMgW8EjLs9M2uv2lqqNFJPswSc6qBCofzVIqm2jhCrB1YSukwcZfqUHb1fN4ARLi630pfiruhUm/vdun8XgGwFM887M=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ri8/8ESNMNZLVKJ1DhoHJwmdlGOvpCYD2HYYiieal1RLR7BS9nmfFoLI7eYdXWIsJ1CvYe/ar+Hr9/yRhk1jUdlGcHKE9lhWs7By5v6StC6ML82NaCU9dw7URlOTExE3+rKrg6msEGcMirExVOd4dbfltAYMroZvt+zl4Y8Mp08=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c4f8c98f1a2105a58aed9e7c7e9bd5875ec78ca0" Description="" Url=""><as:assemblyIdentity name="R-Listener-GUI-V.4.3.exe" version="1.0.0.3" publicKeyToken="9b39f768298739ef" language="en-IN" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=UDAY-PC\Uday</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>2QgajB/rmYFhOwRJOpxagxl+qxc=</DigestValue></Reference></SignedInfo><SignatureValue>auiY48ZvaUovwN7NNro9FsNxSHNE6YQABVwNyn2n74p0DbUDFC9US9x787ayoNd5bIKKMqQzuI0NPaulBmb//58Y1RJ+XUkr0/sD7MjKXg9W+a8O/NShu2iSaX6b3PvY94CkAk9nKCkPbAQjaGeXcAdrNwdlS/TO5yBHz2wAvzs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ri8/8ESNMNZLVKJ1DhoHJwmdlGOvpCYD2HYYiieal1RLR7BS9nmfFoLI7eYdXWIsJ1CvYe/ar+Hr9/yRhk1jUdlGcHKE9lhWs7By5v6StC6ML82NaCU9dw7URlOTExE3+rKrg6msEGcMirExVOd4dbfltAYMroZvt+zl4Y8Mp08=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQYTVOcHvBurVNpBOklVa3ajANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDHhgAVQBEAEEAWQAtAFAAQwBcAFUAZABhAHkwHhcNMTcwMzIyMTEzMDU4WhcNMTgwMzIyMTczMDU4WjAjMSEwHwYDVQQDHhgAVQBEAEEAWQAtAFAAQwBcAFUAZABhAHkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAK4vP/BEjTDWS1SidQ4aBycJnZRjr6QmA9h2GIonmpdUS0ewUvZ5nxaCyO3mHV1iLCdQr2Hv2q/h6/f8kYZNY1HZRnByhPZYVrOwcub+krQujC/NjWglPXcO1EZTkxMRN/qyq4OprBBnDIqxMVTneHW35bQGDK6Gb7fs5eGPDKdPAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAmQwDfMiL8JIY5+yNyzhZR1tbv6iPbKMW9cAr3nWEIGlxhlfB5dZG1sfTFMR+E533R/0ta+8KAQAExkgi3MXtZrZnkDk2ID8cKg/cRfuC0qoq86gZMLDnvZ9GzQe2IiH3fHnBxMPXSdhygmiAuaAJfPRi48sNIHNNELxlfPT9iww=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
